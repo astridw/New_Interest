@@ -42,7 +42,7 @@ class PinsController < ApplicationController
      def set_pin
        @pin = Pin.find(params[:id])
      end
-  
+
 
     def correct_user
       @pin = current_user.pins.find_by(id: parmas[:id])
@@ -51,6 +51,6 @@ class PinsController < ApplicationController
 
      # Never trust parameters from the scary internet, only allow the white list through.
      def pin_params
-       params.require(:pin).permit(:description)
+       params.require(:pin).permit(:description, :image)
      end
  end
