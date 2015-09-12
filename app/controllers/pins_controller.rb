@@ -42,6 +42,12 @@ class PinsController < ApplicationController
      def set_pin
        @pin = Pin.find(params[:id])
      end
+  
+
+    def correct_user
+      @pin = current_user.pins.find_by(id: parmas[:id])
+      redirect_to pins_path, notice: "This isn't your pin!" if @pin.nil?
+    end
 
      # Never trust parameters from the scary internet, only allow the white list through.
      def pin_params
