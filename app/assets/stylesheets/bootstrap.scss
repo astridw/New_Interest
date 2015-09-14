@@ -1,0 +1,16 @@
+$body-bg: #61CFCF;
+$navbar-default-bg: #ecf0f1;
+// $navbar-default-link-color: white;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+text{
+  color: #CF6161;
+}
+
+.login{
+  text-align: center;
+}
+.jumbotron{
+  text-align: center;
+}
