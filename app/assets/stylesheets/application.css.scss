@@ -9,7 +9,8 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ *= require 'masonry/infinitescroll'
+ *= require 'masonry/right-to-left'
  *= require 'masonry/transitions'
  */
  $body-bg: #ecf0f1;
@@ -17,3 +18,16 @@
  $jumbotron-bg: #bdc3c7;
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+
+ #pins {
+   margin: 0 auto;
+ }
+
+ .box {
+   margin: 5px;
+   width: 214px;
+ }
+
+ .box img {
+   width: 100%;
+ }
