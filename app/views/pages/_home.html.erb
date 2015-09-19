@@ -1,0 +1,18 @@
+
+
+<div class="jumbotron">
+  <div class="col-offset-med-2-med-8">
+    <div class="banner">
+      <h1>Interesting Pins</h1>
+        <div class="login">
+          <% if user_signed_in? %>
+            <%= link_to "CREATE YOUR PIN!", new_pin_path, class: "btn btn-default btn-lg" %>
+          <% else %>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+          <% end %>
+        </div>
+    </div>
+
+    </div>
+</div>
